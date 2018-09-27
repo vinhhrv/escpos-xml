@@ -155,6 +155,7 @@ export class BufferBuilder {
    * @return BufferBuilder
    */
   public paperCut(): BufferBuilder {
+    this.lineFeed();
     this.buffer.write(Command.GS_v(1));
     return this;
   }
