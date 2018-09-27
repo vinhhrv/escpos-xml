@@ -72,12 +72,9 @@ const xml = `
       </align>
       <line-feed />
       <align mode="center">
-          <barcode system="CODE_128" width="DOT_250">{{barcode}}</barcode>
+          <barcode system="CODE_39" width="DOT_250">{{barcode}}</barcode>
       </align>
       <line-feed />
-      <align mode="center">
-          <qrcode ecl="M">{{qrcode}}</qrcode>
-      </align>
     <paper-cut/>
   </document>
 `;
